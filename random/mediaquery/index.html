@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 50px;
+        }
+        @media screen and (max-width:900px) {
+         body{
+             background-color:aqua;
+         }
+        }
+        @media screen and (max-width:600px) {
+         body{
+             background-color:green;
+         }
+        }
+        @media screen and (max-width:400px) {
+         body{
+             background-color:black;
+         }
+         div{
+            background-color: white;
+         }
+        }
+        @media screen and (max-width:200px) {
+         body{
+             background-color:orange;
+         }
+         div{
+            background-color: yellow;
+         }
+        }
+        ul{
+            background-color: aqua;
+            list-style: none;
+            display: flex;
+        }
+        li{
+            margin:5px;
+        }
+        @media screen and (max-width:600px){
+            ul{
+                flex-direction: column;
+            }
+        }
+     </style>
+</head>
+<ul>
+    <li>home</li>
+    <li>search</li>
+    <li>note</li>
+    <li>about</li>
+</ul>
+
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

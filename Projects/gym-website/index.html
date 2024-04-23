@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GK Health and Fitness</title>
+</head>
+<link rel="stylesheet" href="./index.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+<script src="./index.js"></script>
+
+
+
+
+<body>
+
+    <header class="class">
+        <div class="left">
+            <!-- Left box for logo -->
+            <img src="img/logo.jpg" alt="photo">
+            <div>Health and Fitness</div>
+        </div>
+
+        <div class="mid">
+            
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="active">About Us</a></li>
+                <li><a href="#" class="active">Fitness Store</a></li>
+                <li><a href="#" class="active">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+           
+            <button class="btn">Call us now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <h1>Join the best Gym in your area Now! </h1>
+        <form >
+            <div class="form-group">    
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <span id="name-error" class="error-message"></span>
+            </div>
+        
+            <div class="form-group">
+                <input type="number" name="age" id="age" placeholder="Enter your Age" required>
+            </div>
+        
+            <div class="form-group">
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Enter your Phone Number" pattern="[0-9]+" required>
+                <span id="phone-error" class="error-message"></span>
+            </div>
+        
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Enter your Email Id" required>
+            </div>
+        
+            <div class="form-group">
+                <input type="text" name="gender" id="gender" placeholder="Enter your Gender" required>
+                <span id="gender-error" class="error-message"></span>
+            </div>
+        
+            <div class="form-group">
+                <input type="text" name="locality" id="locality" placeholder="Enter your Locality" required>
+            </div>
+        
+            <button class="btn" id="popup-button" onclick="validateForm()">Submit</button>
+        </form>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <h1>Welcome to our Gym Website!</h1>
+            <img src="https://stfitnessequipments.com/wp-content/uploads/2020/06/fitness-accecories-shop-banner-trivandrum02.jpg" alt="Popup Image">
+            <p>Thank you for visiting our website. We offer a wide range of health and fitness services.</p>
+            <button class="close-button" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    
+ 
+    
+
+</body>
+
+</html>

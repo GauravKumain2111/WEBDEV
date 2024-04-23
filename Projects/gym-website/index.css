@@ -1,0 +1,156 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url('img/bg.jpg');
+    color: white;
+}
+
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 2px;
+}
+
+.mid {
+    display: block;
+    width: 41%;
+    margin: 41px auto;
+    top: 20px;
+}
+
+.right {
+    position: absolute;
+    right: 34px;
+    top: 32px;
+    display: inline-block;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    font-size: 18px;
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+    text-decoration: underline;
+    color: rgb(87, 87, 83);
+}
+
+.left img {
+    width: 164px;
+    filter: invert(100%);
+}
+
+.left div {
+    text-align: center;
+    line-height: 14px;
+    font-size: 18px;
+}
+
+.btn {
+    margin: 0px 9px;
+    color: white;
+    background-color: black;
+    padding: 21px 23px;
+    border: 2px solid grey;
+    border-radius: 21px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn:hover {
+    background-color: rgb(21, 2, 59);
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    border: 2px solid #ebf6eb;
+    margin: 98px 63px;
+    padding: 63px;
+    width: 40%;
+    border-radius: 16px;
+    display: inline-block;
+}
+
+.form-group input {
+    text-align: center;
+    display: block;
+    width: 434px;
+    padding: 14px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 15px;
+    border-radius: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(155, 149, 149, 0.9);
+    z-index: 999;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.close-button {
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.overlay-content {
+    text-align: center;
+}
+
+.overlay-content img {
+    max-width: 400px;
+    height: auto;
+    margin-bottom: px;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+}
